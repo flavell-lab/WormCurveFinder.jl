@@ -1,0 +1,4 @@
+name = "WormCurveFinder"
+uuid = "66494c34-da64-11e9-2660-55a8e4876c42"
+authors = ["Jungsoo Kim <jungsoo@mit.edu>"]
+version = "0.1.0"

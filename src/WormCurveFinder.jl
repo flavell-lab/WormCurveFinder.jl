@@ -1,0 +1,3 @@
+module WormCurveFinder
+
+end # module
