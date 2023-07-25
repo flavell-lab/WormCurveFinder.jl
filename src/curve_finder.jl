@@ -39,7 +39,7 @@ function calc_head_vec_sign(axis_vec, points, center_xy, img)
     θ = tanh(axis_vec[1] / axis_vec[2])
     mat_rot = [cos(θ) -sin(θ); sin(θ) cos(θ)]
     ptx_tfm = (mat_rot * points')'
-    intensity_tfm = [bilinear_interpolation(img, x_, y_) for (x_, y_) =
+    intensity_tfm = [imresize(img, x_, y_) for (x_, y_) =
         zip(ptx_tfm[:,1] .+ center_xy[1], ptx_tfm[:,2] .+ center_xy[2])];
     idx_pos = findall(ptx_tfm[:,2] .> 0);
     idx_neg = findall(ptx_tfm[:,2] .< 0);
