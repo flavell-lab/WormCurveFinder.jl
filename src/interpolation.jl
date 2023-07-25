@@ -53,3 +53,5 @@ function bilinear_interpolation(img::AbstractArray{T, 2}, y::Number, x::Number) 
     T(((y_max - y) * r1 + (y - y_min) * r2) / (y_max - y_min))
 
 end
+
+chkbounds(::Type{Bool}, img, x, y) = checkbounds(Bool, img, x, y)
