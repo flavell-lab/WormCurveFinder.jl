@@ -1,6 +1,6 @@
 module WormCurveFinder
 
-using Statistics, LinearAlgebra, Images, ImageTransformations
+using Statistics, LinearAlgebra, Images
 
 include("interpolation.jl")
 include("track.jl")
